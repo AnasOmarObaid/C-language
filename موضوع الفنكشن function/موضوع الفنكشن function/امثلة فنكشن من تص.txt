@@ -1,0 +1,102 @@
+#include<iostream>
+#include<string>
+using namespace std;
+void Rafea_edu()
+{
+   
+	char gender;
+	int age=19,policrate,year;
+	string name;
+
+	//print statment 
+	cout<<"WELCOME THE SYSTEM RAFEA EDU - Desgin System: Rafea Fheely\n";
+	cout<<"*******************************************************\n\n";
+	cout<<"Enter an gender is M : ";cin>>gender;
+	cout<<"Enter your name: ";cin>>name;
+	cout<<"Welcome | "<<name<<" | of the System Rafea edu"<<endl;
+	cout<<"Please Enter an age: ";cin>>age;
+	cout<<"Enter an year is born: ";cin>>year;
+	cout<<endl;
+	//NOTE: you must Choose "M" because run the if Statment One ... Good Luck
+	
+			//use the nested if statment
+	if (gender=='M')
+	
+		if (age<21)
+			cout<<"Mr. "<<name<<"\nThe (age*year) = "<<age*year<<endl;
+ // if cin=M and cin age=20 ---->> print age*year
+		else
+			cout<<"Desgin:Rafea Fheely\n";
+	
+	else if (gender=='F')
+		cout<<endl;
+
+
+	cout<<"\n\n\nGood Luck ... "<<name;
+	return;
+
+}
+
+void main()
+{
+	
+	cout<<endl;
+	Rafea_edu();
+
+	cout<<"Desgin: Rafea Fheely\n";
+	cout<<"Visit my Site: https://sites.google.com/site/rafeaedu/home\n";
+
+}
+
+
+--------------------------------------------------------------
+
+#include<iostream>
+#include<string>
+using namespace std;
+void num()
+{ 
+	
+	int mynum=30;
+	int yournum=32;
+
+		if (yournum % mynum == 3) // if (yournum % mynum == 3-1)
+		{
+			yournum=44;
+			mynum=66;
+		}
+
+		else if (yournum % mynum == 2)
+		{
+			yournum=1+6*6;
+			mynum=2;
+		}
+			
+		else
+		{
+			yournum=1;
+			mynum=3;
+		}
+		
+
+		cout<<yournum<<" "<<mynum<<endl;
+		//      37            2
+
+
+	return;
+
+}
+
+void main()
+{
+	
+	cout<<endl;
+	num();
+
+	cout<<"Desgin: Rafea Fheely\n";
+	cout<<"Visit my Site: https://sites.google.com/site/rafeaedu/home\n";
+
+}
+
+
+

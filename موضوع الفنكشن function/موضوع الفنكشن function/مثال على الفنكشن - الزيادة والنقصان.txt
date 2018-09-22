@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+//Desgin: Rafea Fheely
+//Example: Function (decriment)
+void fun1(int x ,int y ,int &z )
+{
+	x++;
+	y++;
+	z++;
+cout<<x<<y<<z<<endl;
+}
+void fun2(int a ,int b ,int &c )
+{
+	a++;
+	b++;
+	c++;
+cout<<a<<b<<c<<endl;
+}
+
+int main()
+{
+	int q=0,w=0,e=0;
+	cout<<q<<w<<e<<endl;
+	fun1(q,w,e);
+	cout<<q<<w<<e<<endl;
+	fun2(q,w,e);
+	cout<<q<<w<<e<<endl;
+}
+//000
+//111
+//001
+//112
+//002

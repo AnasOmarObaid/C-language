@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+void cube(int x)
+{
+cout<<x*x*x;
+}
+int main()
+{
+	int x=3,w=9;
+	cube(2);
+	cout<<endl;
+	cube(x);
+	cout<<endl;
+	
+	return w;
+
+	cout<<"\n\nWelcome by site Rafea edu - Desgin: Rafea Fheely\n";
+	cout<<"Site:https://sites.google.com/site/rafeaedu/home\n\n";
+}

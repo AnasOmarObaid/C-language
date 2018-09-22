@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+int element(int x, int y)
+{
+	x++;
+	y--;
+	// x=x+y;
+	// y=y-x;
+	cout<<x<<" "<<y<<endl;
+	return x;
+	return y;
+}
+void main()
+{
+	/*
+	int x = 5 ,y = 4;
+	x = element(x,y);
+	cout<<x<<" "<<y<<endl; // --->> 6 3 endl 5 4
+	*/
+	int z ,x = 5 ,y = 4;
+	z = element(x,y);
+	cout<<x<<" "<<z<<endl;
+
+	cout<<"\n\nWelcome by site Rafea edu - Desgin: Rafea Fheely\n";
+	cout<<"Site:https://sites.google.com/site/rafeaedu/home\n\n";
+}
+
+----------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+void sum()
+{
+	int x = 5 , y = 4;
+	int z = x + y;
+	cout<<z<<endl;
+	//cout<<x+y; --->> 9
+	//return z;  --->> not print (press any key to continue)
+}
+int element(int x)
+{
+	x++;
+	cout<<x<<endl;
+	return x;
+	// if write return;  and void element  --->> error
+}
+void main()
+{
+	cout<<"Sum : ";
+	sum(); //cout<<sum(); --->> error
+	
+	int a = 5;
+	cout<<"a = element(a) : ";
+	a = element(a); // 6
+	cout<<"a : "<<a<<"      "<<a<<" + 4 = "<<a+4<<"\n\n"; // a : 6  6+4 = 10
+
+	// int x=1,y=2;  --->> error
+	// x = sum(x,y); --->> error
+
+	cout<<"\n\nWelcome by site Rafea edu - Desgin: Rafea Fheely\n";
+	cout<<"Site:https://sites.google.com/site/rafeaedu/home\n\n";
+}

@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int Fact(int x )
+{
+		
+		int i=0,fact=1;
+		
+}
+int main()
+{
+	int x,fact;
+	cout<<"Enter your Number :";
+	cin>>x;
+	while(x!=-1)
+	{
+		fact=Fact(x);
+		cout<<"The Factorial of "<<x <<" is "<<fact;
+		cin>>x;
+	}
+	return 0;
+}

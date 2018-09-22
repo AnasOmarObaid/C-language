@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+int element(int x, int y);
+int Rafea(int x, int y)
+{
+	
+	for (x=1;x<=1;x++)
+	{
+		cout<<"&";
+		//cout<<"\n"<<element(x,y)<<endl;
+	}
+	
+	cout<<"___________";
+	return element(x,y);
+}
+int element(int x, int y)
+{
+	x++;
+	y--;
+	cout<<x<<" "<<y<<endl;
+	return x;
+	return y;
+}
+void main()
+{
+	
+	int x = 5 ,y = 4;
+	//x = element(x,y);
+	//cout<<"The Numbers is : "<<x<<" "<<y<<endl; // --->> 6 3 endl 5 4
+	//cout<<element(x,y);
+	Rafea(x,y);
+
+		/*int z ,x = 5 ,y = 4;
+	z = element(x,y);
+	cout<<x<<" "<<z<<endl;
+
+	cout<<"\n\nWelcome by site Rafea edu - Desgin: Rafea Fheely\n";
+	cout<<"Site:https://sites.google.com/site/rafeaedu/home\n\n";
+	*/
+	return;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

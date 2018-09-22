@@ -1,0 +1,1018 @@
+„Ã„Ê⁄… »—«„Ã „‰Ê⁄… ⁄·Ï „Ê÷Ê⁄ «·›‰ﬂ‘‰ „‰ «⁄œ«œ —«›⁄ «·›ÕÌ·Ì
+------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int GCD(int a, int b)
+{
+    int Remainder;
+
+    while( b != 0 )
+    {
+        Remainder = a % b;
+        a = b;
+        b = Remainder;
+    }
+
+    return a;
+}
+
+int main()
+{
+	int x, y;
+
+	cout << "This program allows calculating the GCD\n";
+	cout << "Value 1: ";
+	cin >> x;
+	cout << "Value 2: ";
+	cin >> y;
+
+	cout << "\nThe Greatest Common Divisor of "
+	     << x << " and " << y << " is " << GCD(x, y) << endl;  
+
+	return 0;
+}
+------------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+using namespace std;
+
+string GetName()
+{
+    string FirstName, LastName, FN;   
+
+    cout << "Employee's First Name: ";
+    cin >> FirstName;
+    cout << "Employee's Last Name: ";
+    cin >> LastName;  
+
+    FN = FirstName + " " + LastName;
+
+    return FN;
+}
+
+int main()
+{
+    string FullName;
+    double Hours;
+
+    double GetHours(string FullName);
+
+    FullName = GetName();
+
+    Hours = GetHours(FullName);
+
+    cout << "\nEmployee's Name: " << FullName;
+    cout << "\nWeekly Hours: " << Hours << " hours\n\n";
+
+    return 0;
+}
+
+double GetHours(string FullName)
+{
+    double Mon, Tue, Wed, Thu, Fri, TotalHours;   
+
+    cout << endl << FullName << "'s Weekly Hours\n";
+    cout << "Monday: ";
+    cin >> Mon;
+    cout << "Tuesday: ";
+    cin >> Tue;
+    cout << "Wednesday: ";
+    cin >> Wed;
+    cout << "Thursday: ";
+    cin >> Thu;
+    cout << "Friday: ";
+    cin >> Fri;  
+
+    TotalHours = Mon + Tue + Wed + Thu + Fri;
+
+    return TotalHours;
+}
+------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int rectanglefun (int w , int l)
+{
+int areaofrectangle= w * l ;
+
+return areaofrectangle;
+}
+
+double trianglefun (int b , int h)
+{
+double areaoftriangle= 0.5 * b * h ;
+return areaoftriangle;
+}
+int tirclefun (int r )
+{
+int areaofcircle = (r*r) * 22/7 ;
+return areaofcircle;
+}
+
+void main ()
+{
+int areaofrectangle , areaoftriangle , reaofcircle ;
+int width , length ;
+cout <<"enter width= ";
+cin >> width;
+cout << endl;
+cout <<"enter length= ";
+cin >> length ;
+cout << endl;
+cout <<"The area of Rectangle = ";
+cout<<rectanglefun ( width , length);
+
+int base , height;
+cout <<"enter base= ";
+cin >> base ;
+cout << endl;
+cout <<"enter height= ";
+cin >> height;
+cout << endl;
+cout <<"areaofTriangle = ";
+cout<<rectanglefun (base , height);
+
+int r ;
+cout <<"enter r = ";
+cin >> r ;
+cout << endl;
+cout <<"areaofCircle = ";
+cout<<tirclefun (r );
+
+}
+------------------------------------------------------------------------------
+«ﬂ » »—‰«„Ã Ì⁄„· ⁄·Ï «œŒ«· 10 «—ﬁ«„ „⁄ »⁄÷Â‰ Ê„‰ À„ Õ”«» «·⁄œœ «·«ﬂ»— »Ì‰Â„ 
+øøøøøøøøøøøøøøøøøøøøøøøøøøøøøøøøøøøøøø 
+
+#include < iostream>
+using namespace std ;
+int max()
+{
+int n1 , max;
+cout << " please enter 10 number " <<endl ;
+cin >> n1 ;
+max = n1 ;
+for ( int i = 1 ; i<10 ; ++i )
+{
+cin >> n1 ;
+if ( n1 > max )
+max = n1 ;
+}
+return max ;
+}
+void main ()
+{
+cout << " the maximum number of 10 number is " << max() <<endl ;
+cout << " GOOD BY ^_* " << endl;
+}
+
+------------------------------------------------------------------------------
+Q1) Write and design a program to prompt the user to insert 5 integers. Write a function called ?primer? the main will send the five integers to ?primer? function, the function should calculate how many prime numbers amongst the five integers and returns the number to main. Then the main prints the number returned by the ?primer? function.
+Create a function that receives five integers and returns the number of prime integers. Call it ?primer?.
+The main should call the function and prints the value which the function returns.
+Ex.
+Please insert 5 integers: 10 5 3 6 4
+The number of prime integers is 1. (only 3 is a prime integer)
+
+«·ÃÊ«»:
+#include <iostream>
+using namespace std;
+//function
+
+int primer(int a,int e,int d,int c,int b){
+bool prime =true;
+int counter =0;
+
+while(counter <a &&  counter > prime){
+if (a%counter==0)
+prime = false;
+counter ++;}
+if(prime)
+return a;
+
+while(counter<b&&prime){
+if (b%counter==0)
+prime = false;
+counter ++;}
+if(prime)
+return b;
+
+while(counter<c&&prime){
+if (c%counter==0)
+prime = false;
+counter ++;}
+if(prime)
+return c;
+
+while(counter<d&&prime){
+if (d%counter==0)
+prime = false;
+counter ++;}
+if(prime)
+return d;
+
+while(counter<e&&prime){
+if (e%counter==0)
+prime = false;
+counter ++;}
+if(prime)
+return e;
+}
+int main()
+{
+int number1,number2,number3,number4,number5;
+cout<<"please insert 5 integers:";
+cin>>number1>>number2>>number3>>number4>>number5;
+cout<<"the number of prim integers is "
+<<primer(number1,number2,number3,number4,number5)<<endl;
+return 0;}
+------------------------------------------------------------------------------
+»œÌ «œŒ· ⁄œœ »«·‹‹ Main „ﬂÊ‰ „‰ 3 „‰«“· „”·« 369 »œÌ «⁄„· function Ìÿ»⁄·Ì ﬂ· ⁄œœ ⁄·Ï ”ÿ— Ì⁄‰Ì
+3
+6
+9
+
+#include<iostream>
+using namespace std;
+void function (int n)
+{
+int x,z,y;
+z=n/100;
+y=n/10;
+y=y%10;
+x=n%10;
+cout<<z<<endl;
+cout<<y<<endl;
+cout<<x<<endl<<endl;
+}
+void main()
+{
+int n;
+cout<<"enter 3 numbers : " ;
+cin>>n;
+cout<<endl;
+function(n);
+}
+------------------------------------------------------------------------------
+Write a two user defined functions to find the sum of two integer numbers .you should send the two numbers as parameters.
+The first function sends the two integer numbers by value.
+The second function sends the two integer numbers by reference.
+
+
+#include<iostream>
+using namespace std;
+int sum(int a,int b)
+{
+cout<<"Please Enter the value of x again: ";
+cin>>a;
+cout<<"Please Enter the value of y again: ";
+cin>>b;
+
+
+return a+b;
+}
+int summation(int &a,int &b)
+{ cout<<"Please Enter the value of z again: ";
+cin>>a;
+cout<<"Please Enter the value of k again: ";
+cin>>b;
+return a+b;
+}
+
+int main()
+{
+
+int x,n;
+int y;
+cout<<"Please Enter the value of x: ";
+cin>>x;
+cout<<"Please Enter the value of y: ";
+cin>>y;
+n=sum(x,y);
+
+cout<<"The sum of two integer numbers by value: "<<n<<"( x= "<<x<<" y= "<<y<<" )\n";
+
+int z,w;
+int k;
+cout<<"\nPlease Enter the value of z: ";
+cin>>z;
+cout<<"Please Enter the value of k: ";
+cin>>k;
+w=summation(z,k);
+
+cout<<"The sum of two integer numbers by reference: "<<w<<"( z= "<<z<<" k= "<<k<< " )\n";
+
+return 0;
+}
+------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+void odd(int a);
+void even(int a);
+//Desgin: Rafea Fheely
+void main()
+{
+int i;
+do
+{
+	cout<<"Please Enter Any Number\nNote:Once the pressure on the number zero will end loop\n";
+cin>>i;
+odd(i);
+}
+while (i!=0);
+
+cout<<"\n\nWelcome by site Rafea edu - Desgin: Rafea Fheely\n";
+}
+void odd(int a)
+{
+if ((a%2)!=0)
+cout<<"Odd \n";
+else
+even (a);
+}
+
+void even(int a)
+{
+if ((a%2)==0)
+cout<<"Even \n";
+else
+odd (a);
+}
+------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int test(int a)
+{
+	//Desgin: Rafea Fheely
+int count=0;
+int i;
+	for(i=1;i<=a;i++)
+		
+	if (a%i==0)
+	count++;
+		if (count==2) 
+		return true;
+		else 
+		return false;
+}
+void main()
+{
+	int num;
+	cout<<"please enter a positive number: ";
+	cin>>num;
+	cout<<test(num)<<"\n";
+	cout<<"\nGOOD BY\n";
+
+}
+------------------------------------------------------------------------------
+Write a C++ program that writes a two functions (void ) each function calculates monthly salary based on number of hours worked if you know that salary per hour =$30. Use Global variable bonus to add the same amount of bonus in each function for the monthly salary.
+
+The program should print:
+Monthly salary (employees)
+Monthly salary plus bonus.
+
+If you know that bonus is $20 per month.
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+int bonus = 20;
+
+void monthlySalaryWithBonus(int mSal)
+{
+cout<<"Monthly salary plus bonus : "<<(mSal+bonus)<<endl;
+}
+
+void monthlySalary(int h)
+{
+int mSal;
+mSal = h*30*30;
+cout<<"Monthly salary : "<<mSal<<endl;
+monthlySalaryWithBonus(mSal);
+
+}
+
+int main()
+{
+int hours;
+cout<<"Please enter number of hours worked everyday: ";
+cin>>hours;
+
+monthlySalary(hours);
+
+
+return 0;
+}
+------------------------------------------------------------------------------
+Write two functions (void), first function has integer parameter passed by reference and the second function has parameter passed by value. The first function output the value of the negative number as positive number .The second function output the value of the positive number as negative number.
+Print the two parameters after the function call in the main.
+Example:
+Input:-2
+First function output: 2
+Input: 2
+Second function output: -2
+After function call (Main output):
+First value: 2
+Second value: 2 
+
+
+#include <iostream>
+using namespace std ;
+void positive(int &x)
+{
+if(x<0)
+cout<< -x << endl ;
+
+}
+
+void negative( int x)
+{
+if(x>0)
+cout<< -x << endl ;
+
+}
+
+void main ()
+{
+int x ;
+
+cout << " Enter the number , please : " ;
+cin >> x ;
+
+if(x<=0)
+positive(x) ;
+else
+negative(x) ;
+}
+
+------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+void function (int n)
+{
+int x,z,y;
+z=n/100;y=n/10;y=y%10;x=n%10;
+cout<<z<<endl;cout<<y<<endl;cout<<x<<endl<<endl;
+}
+void main()
+{
+int n;
+cout<<"enter 3 numbers : " ;
+cin>>n;cout<<endl;function(n);
+}
+------------------------------------------------------------------------------
+Q1: Write a C++ program using function overloading to define three functions named ìAreaî as the same, to compute the area of Rectangle, Triangle, and Circle.
+The area of Rectangle= width * length
+The area of Triangle= 0.5 * base * height.
+The area of Circle = r2 ?
+
+
+#include<iostream>
+using namespace std;
+double area (double a , double b )//this function to find an area of rectangle
+{
+double result;
+result = a*b ;
+return result;
+}
+
+int area (int s , int d)
+{
+int result;
+result = (1.0/2) * s * d ;
+return result;
+}
+
+double area (double r )
+{
+double result;
+result = r * r * (22.0/7);
+return result ;
+}
+void main ()
+{
+double x,z;// x = width of rectangle .... z = length of rectangle
+cout<<"insert a width and length of rectangle \n";
+cin>>x>>z;// x = width of rectangle .... z = length of rectangle
+cout<<"the area of rectangle = "<<area(x,z)<<endl<<"\n\n";
+
+int q,w;// q = the base of triangle .... w = the hieght of triangle
+cout<<"insert the base and hieght of triangle \n";
+cin>>q>>w;
+cout<<"the area of triangle = "<<area (q,w)<<"\n\n\n";
+
+double r;// r = the radiuse of circle
+cout<<"insert the radius of circle \n";
+cin>>r; //
+cout<<"the area of circle = "<<area(r)<<"\n\n\n";
+
+}
+------------------------------------------------------------------------------
+Write a program to convert the time from 24-hour notation to 12-hour notation and vice versa. Your program must be menu driven, giving the user the choice of converting the time between the two notations. Furthermore, your program must contain at least the following function: a function to convert the time from 24-hour notation to 12-hour notation, a function to convert the time from 12-hour notation to 24-hour notation, a f unction to display the choices, function(s) to get the input, and function(s) to display the results. (For 12-hour time notation, your program must display AM or PM.)
+
+
+#include<iostream>
+using namespace std ;
+void menu()
+{
+cout<< "\t\t\t *** Welcome ***\n\n\n " ;
+cout<< "What do you want to do ? \n " ;
+cout<< "1 to covert from -24- to -12- clock system \n 2 to convert from -12- to -24- clock system \n " ;
+}
+
+void converter12()
+{
+int x , y ; // x for hours and y for minutes
+cout << "\n Enter the time that you wanna convert it , please " ;
+cout << "\n Enter the hours : " ;
+cin >> x ;
+cout << "\n Enter the minutes : " ;
+cin>> y ;
+
+if(x>12)
+cout << "\n The time is now "<<x-12<<":"<<y<<" PM" << endl ;
+else
+cout << "\n The time is now "<<x<<":"<<y<<" AM " << endl ;
+}
+
+void converter24()
+{
+int x , y ; // x for hours , y for minutes
+char z ; // to know AM or PM
+
+cout << "\n Enter the time that you wanna convert it , please " ;
+cout << "\n Enter the hours : " ;
+cin >> x ;
+cout << "\n Enter the minutes : " ;
+cin >> y ;
+cout << "\n AM or PM ? : " ;
+cin >> z ;
+
+if(z=='a'|| z=='A')
+cout << "\n The time is now " <<x<<":"<<y<< endl ;
+else
+cout<< "\n The time is now " <<x+12<<":"<<y << endl ;
+
+}
+
+void main ()
+{
+int c ;
+
+menu() ;
+cin>>c ;
+
+switch(c)
+{
+case 1:
+converter12();
+break ;
+case 2:
+converter24() ;
+break;
+default:
+break;
+}
+}
+------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main()
+{
+     cout<<"Press B for Bcust\n";
+	 cout<<"Press H for home cust\n";
+	 cout << "Enter cust type: \n";
+	 char t;
+	 cin>>t;
+	 int kno;
+	 cout<<"Plze enter no of k\n";
+	 cin>>kno;
+	 double bill;
+      if (t=='B')
+	  {	  
+		  if (kno<=160 && kno>=0)
+			bill =400+kno*40;
+		  else if (kno>160)
+			bill =400+160*40+(kno-160)*60;
+		  else
+			  cout<<"invalid kno\n";
+	  }
+	  else if (t=='H')
+		  {	  
+		  if (kno<=160 && kno>=0)
+			bill =200+kno*20;
+		  else if (kno>160)
+			bill =200+160*20+(kno-160)*30;
+		  else
+			  cout<<"invalid kno\n";
+	  }
+      cout<<bill;
+return 0;
+}
+------------------------------------------------------------------------------
+1. Write a program with a menu displayed to the user containing the following
+choices:
+Select Your Choice number
+(1) Sum
+(2) Positive Or Negative
+(3) Power
+(4) Prime
+(-1) To stop loop
+
+
+
+#include<iostream>
+using namespace std ;
+bool prime(int num)
+{
+if(num<0)
+return 0;
+else
+for(int counter =2;counter < num;counter++)
+if(num%counter ==0)
+return 0;
+return 1;
+}
+double fan1(int many )
+{
+double num;
+double sum=0;
+int i=1;
+while(i<=many)
+{cout<<"please enter the value number "<<i<<" : ";
+cin>>num;
+sum=sum+num;
+i++;}
+return sum;
+}
+bool fan2(int num)
+{
+if(num<0)
+return 0;
+else
+return 1;
+}
+int fan3(int power,int nx)
+{if(power>1)
+return(nx*fan3((power-1),nx));
+else
+return (nx);
+}
+
+void main ()
+{
+int ch ;
+cout<<"please enter your choice : ";
+cin>>ch;
+
+while (ch!=-1)
+{switch(ch)
+{
+case 1:
+int many;
+cout<<"please enter many numbers : ";
+cin>>many;
+cout<<"the sum is : "<<fan1(many)<<endl;
+break;
+case 2:
+int num;
+cout<<"please enter the number : ";
+cin>>num;
+if(fan2(num))
+cout<<"the number "<<num<<" is positive\n";
+else
+cout<<"the number "<<num<<" is negative\n";
+break;
+case 3:
+int pow;
+int n;
+cout<<"please enter the numbers : ";
+cin>>n;
+cout<<"please enter the power : ";
+cin>>pow;
+cout<<n<<'^'<<pow<<"is : "<<fan3(pow,n)<<endl;
+break;
+case 4:
+int number ;
+cout<<"Enter an integer number : ";
+cin>>number;
+cout<<"The number "<<number<<" is :";
+if (prime (number))
+cout<<"prime number\n";
+else
+cout<<"not prime number\n";
+break;
+default:
+cout<<"this is the wrong choice \n";
+}
+cout<<"please enter your choice : ";
+cin>>ch;
+}
+}
+------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+void odd(int a);void even(int a);
+//Desgin: Rafea Fheely
+void main()
+{
+int i;
+do
+{
+	cout<<"Please Enter Any Number\nNote:Once the pressure on the number zero will end loop\n";
+cin>>i;
+odd(i);
+}
+while (i!=0);
+
+cout<<"\n\nWelcome by site Rafea edu - Desgin: Rafea Fheely\n";
+}
+void odd(int a)
+{
+if ((a%2)!=0)
+cout<<"Odd \n";
+else
+even (a);
+}
+
+void even(int a)
+{
+if ((a%2)==0)
+cout<<"Even \n";
+else
+odd (a);
+}
+------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int test(int a)
+{
+	//Desgin: Rafea Fheely
+int count=0;
+int i;
+	for(i=1;i<=a;i++)
+		
+	if (a%i==0)
+	count++;
+		if (count==2) 
+		return true;
+		else 
+		return false;
+}
+void main()
+{
+	int num;
+	cout<<"please enter a positive number: ";
+	cin>>num;
+	cout<<test(num)<<"\n";
+	cout<<"\nGOOD BY\n";
+
+}
+-----------------------------------------------------------------------
+
+Q2) Write a program that prompts the user to insert an integer value. Then write a function called ?adder? that receives one integer value of two digits (e.g. 54), then it must split the two digits (5 + 4) and add them to each other then returns the value to the main
+(e.g. 54 5 + 4 9). Then the main prompts the user for another number and send it to another function called ?subtracter?. This function must subtract the numbers from each other. (92 9 - 2 7) . Finally, the function ?subtracter? must return the final value to the main. The main must print that value.
+Ex1:
+Please insert 1 integer: 60
+Adder result is 6
+Please insert 1 integer: 53
+Subtracter result is 2
+
+
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+int add(int num1);
+int Sub(int num2);
+int main ()
+{//Desgin: Rafea Fheely
+int num1,num2;
+cout<<"please insert a two digit integer: ";
+cin>>num1;
+
+cout<<"add result is: \'"<<add(num1)<<"\'"<<endl;
+
+cout<<"please insert a two digit integer: ";
+cin>>num2;
+cout<<"Subtracter result is: \'"<<Sub (num2)<<"\'"<<endl;
+cout << "\n\nDesgin: Rafea Fheely\n\n";
+
+}
+int add(int num1)
+{
+if (num1<0)
+num1=abs(num1);
+int sum;
+sum=num1%10 + num1/10;
+
+return sum;
+}
+int Sub (int num2)
+{
+if (num2<0)
+num2=abs(num2);
+int sub;
+sub=num2/10-num2%10;
+
+return sub;
+}
+--------------------------------------------------------------------------
+
+Write a returned value function that return integer and define two by reference parameters that represent the width and height for a rectangle.
+
+Body of the function:
+
+Return the area of the rectangle
+
+Main:
+Print the user to insert width and height for the rectangle. Pass parameters height and width in the function call.
+Print the area of the rectangle.
+
+Then
+Increment height and width (post increment).
+Print the area of rectangle after post increment for height and width
+
+
+
+#include<iostream>
+using namespace std;
+int fun(int &w,int &h )
+{
+return w*h;
+}
+void main()
+{
+int x,z;
+cout<<"insert the height";
+cin>>x;
+cout<<"insert the width";
+cin>>z;
+cout<<"the Area="<<fun(x,z)<<endl;
+x++;
+z++;
+cout<<"the Area after increment="<<fun(x,z)<<endl;
+}
+-------------------------------------------------------------------------
+Write a function called zero_small() that has two integer arguments being passed by reference and sets the smaller of the two numbers to 0. Write the main program to access the function.
+Sample Run:
+En
+ter first number: 23
+Enter first number: 6
+First number is: 23
+Second number is: 0
+ÌœŒ· —ﬁ„Ì‰ ÊÌ‘Ê› „Ì‰ «·«’€— ›ÌÂ„
+ÊÌÿ»⁄ ’›— »œ· «·—ﬁ„ «·«’€—
+
+
+#include <iostream>
+using namespace std;
+void zero_small(int number1,int number2)
+{
+
+if (number1>number2)
+{
+cout<<"First number is: "<<number1<<endl;
+cout<<"Second number is: "<<0<<endl;
+}
+
+else
+{
+cout<<"First number is: "<<0<<endl;
+cout<<"Second number is: "<<number2<<endl;
+}
+
+}
+void main ()
+{
+int number1,number2;
+
+cout<<"Enter first number: "<<endl;
+cin>>number1;
+cout<<"Enter Second number: "<<endl;
+cin>>number2;
+
+zero_small(number1,number2);
+}
+----------------------------------------------------------------------------
+write a program that computes the sum of all the integers in a range specified by the user.
+In addition to the main function, there should be a function that accepts two parameters that specify a lower and upper
+bound. It should compute the sum of all the integers between those bounds, inclusive, and display that sum.
+The main function should prompt the user for the two bounds and call that function passing in those values.
+
+
+
+" Sample Run"
+
+Enter a lower and upper: 2 4
+Sum = 9
+Enter a lower and upper: 1 6
+Sum = 21
+
+
+#include<iostream>
+using namespace std;
+// The program that computes the sum of all the integers
+// Desgin: Rafea ALi Fheely
+// ID Stubent: 20122174007
+void lower_Upper( int lower , int upper )
+{
+	int Sum=0;
+
+	while ( lower < upper )
+	{
+		Sum+= lower;
+		lower++;
+
+	}
+	cout<<"    The Sum = " << Sum + upper <<endl;
+	// compute the sum of all the integers
+}
+
+void main()
+{
+	int x,y;
+	cout << "Note: The program that computes the sum of all the integers " << endl;
+	cout << "\nPlease Enter lower and upper Numbers : " << endl;
+	cin >> x >> y;
+	lower_Upper(x,y);
+	cout << "\n\n   * Desgin by: Rafea ALi Fheely\n   * ID Stubent: 20122174007\n" << endl;
+
+}
+-----------------------------------------------------------------
+Write a program consists of four functions. The main function prompts the user for the three values,
+reads them in and then calls the function computeMedian to determine the median value and finally
+it displays the median. The function computeMedian computes the median by subtracting the minimum and maximum from the sum.
+"Sample Run"
+
+Enter 3 Integers:
+10
+5
+9
+
+median = 9
+
+
+
+#include <iostream>
+using namespace std;
+// The Program you Take Three intgers for Sum - Max - Mini
+// Desgin: Rafea ALi Fheely
+// ID Stubent: 20122174007
+
+// Note: This using Protatype Functions
+	void Result( int x,int y,int z );
+	int Sum( int x,int y,int z );
+	int Max( int x,int y,int z );
+	int Mini( int x,int y,int z );
+
+void Result( int x,int y,int z ) // Result = Sum - Max - Mini
+{
+	cout << endl << "   The Median Number = " << Sum(x,y,z) - Max(x,y,z) - Mini(x,y,z) << endl;
+}
+
+int Max( int x,int y,int z ) // Maximum Three Number
+{
+	// Note: if Statment using (return)
+	if ( x>=y && x>=z )
+
+		return x; // x
+
+	else if ( y>=x && y>=z )
+
+		return y; // y
+
+	else if ( z>=x && z>=y )
+
+		return z; // z
+}
+
+int Mini( int x,int y,int z ) // Minimum Three Number
+{
+	// Note: if Statment using (return)
+	if ( x<=y && x<=z )
+
+		return x; // x
+
+	else if ( y<=x && y<=z )
+
+		return y; // y
+
+	else if ( z<=x && z<=y )
+
+		return z; // z
+}
+
+int Sum( int x,int y,int z ) // Sum equal is (x+y+z) we use return
+{
+	return x+y+z;
+}
+void main()
+{
+	int x,y,z;
+	cout << "Note: The Program you Take Three intgers for Sum - Max - Mini " << endl;
+	cout << "Please Enter Three Numbers : " << endl;
+	cin >> x >> y >> z;
+	Result(x,y,z); // Line 11: Result = Sum - Max - Mini
+	cout << "\n\n   * Desgin by: Rafea ALi Fheely\n   * ID Stubent: 20122174007\n" << endl;
+}

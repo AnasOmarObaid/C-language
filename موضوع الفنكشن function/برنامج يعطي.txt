@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+void Rafea()
+{
+	int a,b,c,t;
+	cin>>a>>b>>c;
+	t=a;
+		if(a>b)		{
+		t=a;
+		a=b;
+		b=t;	}
+
+		if(a>c)		{
+		t=a;
+		a=c;
+		c=t;	}
+		
+		if(b>c)		{
+		t=b;
+		b=c;
+		c=t;	}
+		
+		cout<<"The Number  = "<<a<<" "<<b<<" "<<c<<endl;
+		cout<<"The Out Num = "<<c<<" "<<b<<" "<<a;
+}
+void main()
+{
+	Rafea();
+
+	cout<<"\n\nWelcome by site Rafea edu - Desgin: Rafea Fheely\n";
+	cout<<"Site:https://sites.google.com/site/rafeaedu/home\n\n";
+}

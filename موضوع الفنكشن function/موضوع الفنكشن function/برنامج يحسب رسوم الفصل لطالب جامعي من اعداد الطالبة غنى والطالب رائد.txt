@@ -1,0 +1,362 @@
+# include <iostream>//preproces
+using namespace std;
+int fun1(int f , int k)//This pairing to calculate how much they will pay the student dismissal depending on the number of hours and fees separation and specialization
+{
+	int bill;//here we defain bill as integar
+	bill= f*k;//This sentence is calculated invoice for student
+	return bill;//This sentence back to us the amount of the invoice
+}
+void main()//this is the main function
+{
+	int ch,l,g;//Here we define these variables as integar
+	char x;//Here we defain x as character
+	cout<<"Jordan University Of Science and Technology "<<endl<<endl;//This is the name of the university, which was designed program for which
+	cout<<"List of disciplines at the university"<<endl;//This is the title of a list of undergraduate majors
+	cout<<"**************************************"<<endl;//This sentence for coordination in the form of a table
+	cout<<"1-Medicine and Surgery"<<endl;//This is one of the disciplines at the university
+	cout<<"2-Medical and dental surgery"<<endl;//This is one of the disciplines at the university
+	cout<<"3-Pharmacy"<<endl;//This is one of the disciplines at the university
+	cout<<"4-Pharm.D"<<endl;//This is one of the disciplines at the university
+	cout<<"5-Nursing(just boys or just girles)"<<endl;//This is one of the disciplines at the university
+	cout<<"6-Midwifery"<<endl;//This is one of the disciplines at the university
+	cout<<"7-Medical Laboratory Sciences"<<endl;//This is one of the disciplines at the university
+	cout<<"8-Department of Health Services"<<endl;//This is one of the disciplines at the university
+	cout<<"9-Physiotherapy"<<endl;//This is one of the disciplines at the university
+	cout<<"10-Occupational Therapy"<<endl;//This is one of the disciplines at the university
+	cout<<"11-Optics"<<endl;//This is one of the disciplines at the university
+	cout<<"12-X-ray technology"<<endl;//This is one of the disciplines at the university
+	cout<<"13-Ambulance and Emergency"<<endl;//This is one of the disciplines at the university
+	cout<<"14-Hearing and Speech"<<endl;//This is one of the disciplines at the university
+	cout<<"15-Hearing and Speech (heard)"<<endl;//This is one of the disciplines at the university
+	cout<<"16-Hearing and Speech (pronunciation)"<<endl;//This is one of the disciplines at the university
+	cout<<"17-Technology industry teeth"<<endl;//This is one of the disciplines at the university
+	cout<<"18-Dental Science Support"<<endl;//This is one of the disciplines at the university
+	cout<<"19-Criminal Sciences"<<endl;//This is one of the disciplines at the university
+	cout<<"20-Veterinary Medicine and Surgery"<<endl;//This is one of the disciplines at the university
+	cout<<"21-Plant Production"<<endl;//This is one of the disciplines at the university
+	cout<<"22-Animal Production"<<endl;//This is one of the disciplines at the university
+	cout<<"23-Nutrition and Food Technology"<<endl;//This is one of the disciplines at the university
+	cout<<"24-Soil and irrigation"<<endl;//This is one of the disciplines at the university
+	cout<<"25-Mathematics"<<endl;//This is one of the disciplines at the university
+	cout<<"26-Applied Physics"<<endl;//This is one of the disciplines at the university
+	cout<<"27-Applied Chemistry"<<endl;//This is one of the disciplines at the university
+	cout<<"28-Biotechnology and Genetic Engineering"<<endl;//This is one of the disciplines at the university
+	cout<<"29-Computer Science"<<endl;//This is one of the disciplines at the university
+	cout<<"30-Computer Information Systems"<<endl;//This is one of the disciplines at the university
+	cout<<"31-Civil Engineering"<<endl;//This is one of the disciplines at the university
+	cout<<"32-Architecture"<<endl;//This is one of the disciplines at the university
+	cout<<"33-Urban Planning"<<endl;//This is one of the disciplines at the university
+	cout<<"34-Visual communication"<<endl;//This is one of the disciplines at the university
+	cout<<"35-Electrical Engineering"<<endl;//This is one of the disciplines at the university
+	cout<<"36-Mechanical Engineering"<<endl;//This is one of the disciplines at the university
+	cout<<"37-Chemical Engineering"<<endl;//This is one of the disciplines at the university
+	cout<<"38-Biomedical Engineering"<<endl;//This is one of the disciplines at the university
+	cout<<"39-Nuclear Engineering"<<endl;//This is one of the disciplines at the university
+	cout<<"40-Industrial Engineering"<<endl;//This is one of the disciplines at the university
+	cout<<"41-Computer Engineering"<<endl;//This is one of the disciplines at the university
+	cout<<"42-Aerospace Engineering"<<endl;//This is one of the disciplines at the university
+	cout<<"43-Engineering and computer networks security"<<endl;//This is one of the disciplines at the university
+	cout<<"44-Software Engineering"<<endl;//This is one of the disciplines at the university
+	cout<<"45-English for special purposes"<<endl;//This is one of the disciplines at the university
+	cout<<"********************************"<<endl<<endl;//This sentence for coordination in the form of a table
+	cout<<"If you want to get out of the system give char x star icon"<<endl<<endl;//This sentence inform the user how to get out of the system when you are finished using the program
+	
+	bool flag =false;//Here we dwfain flag as bool
+
+	while(!flag)//This sentence to repeat the process required to account when introducing star icon
+	{
+		cout<<"I ask you to intervene a if you want the normal system or b parallel system or c If you are a student of Mecca :";//This to let the user know what to insert firest
+		cin>>x;//here he should insert his choise
+		cout<<endl<<endl;//This to start from new line
+
+		if (x=='*')//This condition to let the program stop if it is true
+		{
+			flag = true;//this sentence will stop the program
+			break;
+		}
+
+		cout<<"I hope you have to enter semester fees at the university";//This sentence does not mark it must enter Chapter fees
+		cin>>g;//This sentence makes it enters the amount of fees paid by each semester
+		cout<<endl<<endl;//This to start from new line
+
+		switch (x)//This sentence to determine the nature of the student study whether normal or parallel system or an honor and at the option of bill is calculated for the semester
+		{
+			case 'a'://This sentence in the event the system is normal
+			cout<<"I ask you to enter university specialization";//This sentence inform the user that he must enter a specialty student
+			cin>>ch;//This sentence gives the opportunity to insert a specialty college student
+			
+			switch (ch)//This sentence to see specialty university student Accordingly account invoice, which will be paid for the semester
+			{
+				case 1://This case calculates the amount paid by the student in case of specialization Medicine and Surgery
+					cout<<"I ask you to enter the number of credit hours for this semester";//This sentence does not mark it must enter the number of hours for the new semester
+					cin>>l;//This give him chance to insert number of hours
+					cout<<"Total required amount of student equals to "<<fun1(l,36)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+					break;
+				case 2://This case calculates the amount paid by the student in case of specialization Medical and dental surgery
+					cout<<"I ask you to enter the number of credit hours for this semester";//This sentence does not mark it must enter the number of hours for the new semester
+					cin>>l;//This give him chance to insert number of hours
+					cout<<"Total required amount of student equals to "<<fun1(l,31)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+					break;
+				case 4://This case calculates the amount paid by the student in case of specialization Pharm.D
+					cout<<"I ask you to enter the number of credit hours for this semester";//This sentence does not mark it must enter the number of hours for the new semester
+					cin>>l;//This give him chance to insert number of hours
+					cout<<"Total required amount of student equals to "<<fun1(l,47)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+					break;
+				case 5://This case calculates the amount paid by the student in case of specialization Nursing(just boys or just girles)
+				case 6://This case calculates the amount paid by the student in case of specialization Midwifery"<<endl
+					cout<<"I ask you to enter the number of credit hours for this semester";//This sentence does not mark it must enter the number of hours for the new semester
+					cin>>l;//This give him chance to insert number of hours
+					cout<<"Total required amount of student equals to "<<fun1(l,30)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+					break;
+				case 7://This case calculates the amount paid by the student in case of specialization Medical Laboratory Sciences
+				case 8://This case calculates the amount paid by the student in case of specialization Department of Health Services
+				case 9://This case calculates the amount paid by the student in case of specialization Physiotherapy
+				case 10://This case calculates the amount paid by the student in case of specialization Occupational Therapy
+				case 11://This case calculates the amount paid by the student in case of specialization Optics
+				case 12://This case calculates the amount paid by the student in case of specialization X-ray technology
+				case 13://This case calculates the amount paid by the student in case of specialization Ambulance and Emergency
+				case 14://This case calculates the amount paid by the student in case of specialization Hearing and Speech
+				case 15://This case calculates the amount paid by the student in case of specialization Hearing and Speech (heard)
+				case 16://This case calculates the amount paid by the student in case of specialization Hearing and Speech (pronunciation)
+				case 19://This case calculates the amount paid by the student in case of specialization Criminal Sciences
+				case 28://This case calculates the amount paid by the student in case of specialization Biotechnology and Genetic Engineering
+					cout<<"I ask you to enter the number of credit hours for this semester";//This sentence does not mark it must enter the number of hours for the new semester
+					cin>>l;//This give him chance to insert number of hours
+					cout<<"Total required amount of student equals to "<<fun1(l,32)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+					break;
+				case 17://This case calculates the amount paid by the student in case of specialization Technology industry teeth
+				case 18://This case calculates the amount paid by the student in case of specialization Dental Science Support
+					cout<<"I ask you to enter the number of credit hours for this semester";//This sentence does not mark it must enter the number of hours for the new semester
+					cin>>l;
+					cout<<"Total required amount of student equals to "<<fun1(l,24)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+					break;
+				case 20://This case calculates the amount paid by the student in case of specialization Veterinary Medicine and Surgery
+					cout<<"I ask you to enter the number of credit hours for this semester";//This sentence does not mark it must enter the number of hours for the new semester
+					cin>>l;//This give him chance to insert number of hours
+					cout<<"Total required amount of student equals to "<<fun1(l,26)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+					break;
+				case 21://This case calculates the amount paid by the student in case of specialization Plant Production
+				case 22://This case calculates the amount paid by the student in case of specialization Animal Production
+				case 23://This case calculates the amount paid by the student in case of specialization Nutrition and Food Technology
+				case 24://This case calculates the amount paid by the student in case of specialization Soil and irrigation
+				case 25://This case calculates the amount paid by the student in case of specialization Mathematics
+				case 26://This case calculates the amount paid by the student in case of specialization Applied Physics
+				case 27://This case calculates the amount paid by the student in case of specialization Applied Chemistry
+					cout<<"I ask you to enter the number of credit hours for this semester";//This sentence does not mark it must enter the number of hours for the new semester
+					cin>>l;//This give him chance to insert number of hours
+					cout<<"Total required amount of student equals to "<<fun1(l,16)+g<<endl<<endl<<endl;////This sentence to print the final value of the amount paid by the student
+					break;
+				case 29://This case calculates the amount paid by the student in case of specialization Computer Science
+				case 30://This case calculates the amount paid by the student in case of specialization 30-Computer Information Systems
+				case 32://This case calculates the amount paid by the student in case of specialization Architecture
+				case 33://This case calculates the amount paid by the student in case of specialization Urban Planning
+				case 34://This case calculates the amount paid by the student in case of specialization Visual communication
+				case 39://This case calculates the amount paid by the student in case of specialization Nuclear Engineering
+				case 40://This case calculates the amount paid by the student in case of specialization Industrial Engineering
+				case 44://This case calculates the amount paid by the student in case of specialization Software Engineering
+					cout<<"I ask you to enter the number of credit hours for this semester";//This sentence does not mark it must enter the number of hours for the new semester
+					cin>>l;//This give him chance to insert number of hours
+					cout<<"Total required amount of student equals to "<<fun1(l,33)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+					break;
+				case 3://This case calculates the amount paid by the student in case of specialization Pharmacy
+				case 31://This case calculates the amount paid by the student in case of specialization Civil Engineering
+				case 35://This case calculates the amount paid by the student in case of specialization Electrical Engineering
+				case 36://This case calculates the amount paid by the student in case of specialization Mechanical Engineering
+				case 37://This case calculates the amount paid by the student in case of specialization Chemical Engineering
+				case 38://This case calculates the amount paid by the student in case of specialization Biomedical Engineering
+					cout<<"I ask you to enter the number of credit hours for this semester";//This sentence does not mark it must enter the number of hours for the new semester
+					cin>>l;//This give him chance to insert number of hours
+					cout<<"Total required amount of student equals to "<<fun1(l,21)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+					break;
+				case 41://This case calculates the amount paid by the student in case of specialization Computer Engineering
+				case 43://This case calculates the amount paid by the student in case of specialization Engineering and computer networks security
+					cout<<"I ask you to enter the number of credit hours for this semester";//This sentence does not mark it must enter the number of hours for the new semester
+					cin>>l;//This give him chance to insert number of hours
+					cout<<"Total required amount of student equals to "<<fun1(l,41)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+					break;
+				case 42://This case calculates the amount paid by the student in case of specialization Aerospace Engineering
+					cout<<"I ask you to enter the number of credit hours for this semester";//This sentence does not mark it must enter the number of hours for the new semester
+					cin>>l;//This give him chance to insert number of hours
+					cout<<"Total required amount of student equals to "<<fun1(l,50)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+					break;
+				case 45://This case calculates the amount paid by the student in case of specialization English for special purposes
+					cout<<"I ask you to enter the number of credit hours for this semester";//This sentence does not mark it must enter the number of hours for the new semester
+					cin>>l;//This give him chance to insert number of hours
+					cout<<"Total required amount of student equals to "<<fun1(l,14)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+					break;
+
+				default :
+					cout<<"invaled number "<<endl;//This sentence in the event of the introduction of number is on the menu
+					break;
+				case 'b'://This sentence in the event the system is normal
+					cout<<"I ask you to enter university specialization";//This sentence inform the user that he must enter a specialty student
+					cin>>ch;//This sentence gives the opportunity to insert a specialty college student
+				
+					switch (ch)//This sentence to see specialty university student Accordingly account invoice, which will be paid for the semester
+					{
+						case 1://This case calculates the amount paid by the student in case of specialization Medicine and Surgery
+						case 2://This case calculates the amount paid by the student in case of specialization Medical and dental surgery
+							cout<<"I ask you to enter the number of credit hours for this semester";//This sentence does not mark it must enter the number of hours for the new semester
+							cin>>l;//This give him chance to insert number of hours
+							cout<<"Total required amount of student equals to "<<fun1(l,150)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+							break;
+						case 3://This case calculates the amount paid by the student in case of specialization Pharmacy
+						case 17://This case calculates the amount paid by the student in case of specialization Technology industry teeth
+						case 29://This case calculates the amount paid by the student in case of specialization Computer Science
+						case 30://This case calculates the amount paid by the student in case of specialization 30-Computer Information Systems
+						case 31://This case calculates the amount paid by the student in case of specialization Civil Engineering
+						case 32://This case calculates the amount paid by the student in case of specialization Architecture
+						case 33://This case calculates the amount paid by the student in case of specialization Urban Planning
+						case 34://This case calculates the amount paid by the student in case of specialization Visual communication
+						case 35://This case calculates the amount paid by the student in case of specialization Electrical Engineering
+						case 38://This case calculates the amount paid by the student in case of specialization Biomedical Engineering
+						case 41://This case calculates the amount paid by the student in case of specialization Computer Engineering
+						case 43://This case calculates the amount paid by the student in case of specialization Engineering and computer networks security
+						case 44://This case calculates the amount paid by the student in case of specialization Software Engineering
+							cout<<"I ask you to enter the number of credit hours for this semester :";//This sentence does not mark it must enter the number of hours for the new semester
+							cin>>l;//This give him chance to insert number of hours
+							cout<<"Total required amount of student equals to : "<<fun1(l,75)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+							break;
+						case 5://This case calculates the amount paid by the student in case of specialization Nursing(just boys or just girles)
+						case 6://This case calculates the amount paid by the student in case of specialization Midwifery"<<endl
+						case 7://This case calculates the amount paid by the student in case of specialization Medical Laboratory Sciences
+						case 8://This case calculates the amount paid by the student in case of specialization Department of Health Services
+						case 9://This case calculates the amount paid by the student in case of specialization Physiotherapy
+						case 10://This case calculates the amount paid by the student in case of specialization Occupational Therapy
+						case 11://This case calculates the amount paid by the student in case of specialization Optics
+						case 12://This case calculates the amount paid by the student in case of specialization X-ray technology
+						case 13://This case calculates the amount paid by the student in case of specialization Ambulance and Emergency
+						case 14://This case calculates the amount paid by the student in case of specialization Hearing and Speech
+						case 15://This case calculates the amount paid by the student in case of specialization Hearing and Speech (heard)
+						case 16://This case calculates the amount paid by the student in case of specialization Hearing and Speech (pronunciation)
+						case 18://This case calculates the amount paid by the student in case of specialization Dental Science Support
+						case 19://This case calculates the amount paid by the student in case of specialization Criminal Sciences
+						case 20://This case calculates the amount paid by the student in case of specialization Veterinary Medicine and Surgery
+						case 23://This case calculates the amount paid by the student in case of specialization Nutrition and Food Technology
+						case 24://This case calculates the amount paid by the student in case of specialization Soil and irrigation
+						case 28://This case calculates the amount paid by the student in case of specialization Biotechnology and Genetic Engineering
+						case 37://This case calculates the amount paid by the student in case of specialization Chemical Engineering
+						case 45://This case calculates the amount paid by the student in case of specialization English for special purposes
+							cout<<"I ask you to enter the number of credit hours for this semester :";//This sentence does not mark it must enter the number of hours for the new semester
+							cin>>l;//This give him chance to insert number of hours
+							cout<<"Total required amount of student equals to : "<<fun1(l,50)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+							break;
+						case 4://This case calculates the amount paid by the student in case of specialization Pharm.D
+						case 39://This case calculates the amount paid by the student in case of specialization Nuclear Engineering
+						case 42://This case calculates the amount paid by the student in case of specialization Aerospace Engineering
+							cout<<"I ask you to enter the number of credit hours for this semester :";//This sentence does not mark it must enter the number of hours for the new semester
+							cin>>l;//This give him chance to insert number of hours
+							cout<<"Total required amount of student equals to :"<<fun1(l,100)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+							break;
+						case 21://This case calculates the amount paid by the student in case of specialization Plant Production
+						case 22://This case calculates the amount paid by the student in case of specialization Animal Production
+						case 25://This case calculates the amount paid by the student in case of specialization Mathematics
+						case 26://This case calculates the amount paid by the student in case of specialization Applied Physics
+						case 27://This case calculates the amount paid by the student in case of specialization Applied Chemistry
+							cout<<"I ask you to enter the number of credit hours for this semester";//This sentence does not mark it must enter the number of hours for the new semester
+							cin>>l;//This give him chance to insert number of hours
+							cout<<"Total required amount of student equals to "<<fun1(l,40)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+							break;
+						case 36://This case calculates the amount paid by the student in case of specialization Mechanical Engineering
+						case 40://This case calculates the amount paid by the student in case of specialization Industrial Engineering
+							cout<<"I ask you to enter the number of credit hours for this semester";//This sentence does not mark it must enter the number of hours for the new semester
+							cin>>l;//This give him chance to insert number of hours
+							cout<<"Total required amount of student equals to "<<fun1(l,60)+g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+							break;
+
+							default :
+								cout<<"invaled number "<<endl;//This sentence in the event of the introduction of number is on the menu
+					}
+
+							case 'c'://This sentence in the event the system is normal
+							cout<<"I hope you have to enter semester fees at the university";//This sentence does not mark it must enter Chapter fees
+							cin>>g;//This sentence makes it enters the amount of fees paid by each semester
+							cout<<endl<<endl;//This to start from new line
+							cout<<"Total required amount of student equals to :"<<g<<endl<<endl<<endl;//This sentence to print the final value of the amount paid by the student
+
+	}
+}
+}
+
+}
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#include <iostream>
+using namespace std;
+void fun()
+{
+int a,b,c,d;
+char f=3;
+cout<<" "<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<"You are welcome parallel"<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<endl;
+cout<<"Please enter the number of hours has been downloaded\n";
+cin>>a;
+cout<<"Please enter the total number of hours\n";
+cin>>c;
+b=a*75;
+d=c*75;
+cout<<"The amount required per quarter\n";
+cout<<b<<endl;
+cout<<"The required amount in four years\n";
+cout<<d<<endl;
+}
+
+void fun2()
+{
+int k,t,u,o;
+char f=3;
+cout<<" "<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<"You are welcome Aada"<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<endl;
+cout<<"Please enter the number of hours has been downloaded\n";
+cin>>k;
+cout<<"Please enter the total number of hours\n";
+cin>>t;
+u=k*32;
+o=t*32;
+cout<<"The amount required per quarter\n";
+cout<<u<<endl;
+cout<<"The required amount in four years\n";
+cout<<o<<endl;
+
+}
+void fun3()
+{
+int r,e,w,q;
+char f=3;
+cout<<" "<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<"Welcome Bmakramh teachers"<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<endl;
+cout<<"Please enter the number of hours has been downloaded\n";
+cin>>r;
+cout<<"Please enter the total number of hours\n";
+cin>>e;
+w=r*14;
+q=e*14;
+cout<<"The amount required per quarter\n";
+cout<<w<<endl;
+cout<<"The required amount in four years\n";
+cout<<q<<endl;
+}
+
+int main()
+{
+char f=3;
+
+cout<<" "<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<"Welcome to the University of Science and Technology"<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<char(f)<<endl;
+
+char y=16;
+
+int x;
+cout<<char(y)<<"Please enter your No. 1 if you are studying parallel\n";
+cout<<char(y)<<"Please enter the number 2 if you are studying of \"Mokarrameh teachenrs\""<<endl;
+cout<<char(y)<<"Please enter the number 3 if you are studying normal\n";
+cin >> x;
+
+switch (x)
+{
+
+case 1: fun();break;
+case 2:fun2();break;
+case 3:fun3();break;
+case 4:break;
+}
+}

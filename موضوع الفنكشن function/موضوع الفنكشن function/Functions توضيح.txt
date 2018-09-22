@@ -1,0 +1,32 @@
+Download this file from the site Rafea educational programming C + +
+Example ( Functions = int fun  )
+made in: rafea fheely
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Example ( Functions )
+
+--------------------------------------------------------------------------
+
+
+#include <iostream>
+using namespace std;
+int fun (int x)
+{
+	cout<<"Hi\n";
+	int z=7+10;
+	cout<<z<<"\t";
+
+	return 5;
+}
+
+int main()
+{
+
+
+	cout<<fun (5)<<endl;
+
+
+
+return 0;
+}

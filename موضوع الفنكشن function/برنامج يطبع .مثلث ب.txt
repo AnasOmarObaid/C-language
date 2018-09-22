@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+void Rafea ()
+{
+//clrscr();
+for(int i=1; i<=4; i++)
+{
+	for(int i1=5; i1>=i; i1--)
+	cout<<" ";
+		for(int j=1; j<=2*i-1; j++)
+		cout<<"*"<<" ";
+		cout<<endl;
+		}
+			for(int i=3; i>=1; i--)
+			{
+				for(int i1=5; i1>=i; i1--)
+				cout<<" ";
+					for(int j=1; j<=2*i-1; j++)
+					cout<<"*"<<" ";
+					cout<<endl;
+			}
+
+}
+void main()
+{
+	cout<<"Welcome in Website Rafea edu\n\nform|we use for loop & Function\n\n";
+	Rafea();
+}
+
+
+
+/*
+
+*
+* * *
+* * * * *
+* * * * * * *
+* * * * *
+* * *
+*
+*/

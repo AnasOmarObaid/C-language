@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+void Rafea()
+{
+	int n=0,x=0,y=0;
+	cout<<"Program: Enter Odd & Even Number and Sum odd,even\n\n";
+	cout<<"can you finsh enterone\n";
+	
+		for(int i=0;n!=1;i++)
+		{
+			cout<<"enter anumber : ";
+			cin>>n;
+
+			if(n%2==0)
+			x++;
+			else
+			y++;
+		}
+		cout<<"sum of odd = "<<x<<"\n"<<"sum of even = "<<y-1;
+		
+}
+void main()
+{
+	Rafea();
+
+	cout<<"\n\nWelcome by site Rafea edu - Desgin: Rafea Fheely\n";
+	cout<<"Site:https://sites.google.com/site/rafeaedu/home\n\n";
+}

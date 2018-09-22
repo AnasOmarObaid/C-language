@@ -1,0 +1,266 @@
+fun1(int a, int b);
+fun1(int , char );
+
+void main()
+{
+int x;
+fun1(10 , 'A');
+x = fun1 (fun1(10 ,'A'),3);
+cout<<x<<endl;
+}
+
+int fun1(int a ,int b)
+{
+return a+b;
+}
+
+int fun1( int a ,char c)
+{
+cout<<a<<" "<< c <<endl;
+return a;
+}
+
+Result :
+
+error
+----------------------------------------------------------------------
+
+int fun1(int a, int b);
+int fun1(int , char );
+
+void main()
+{
+int x;
+fun1(10 , 'A');
+x = fun1 (fun1(10 ,'A'),3);
+cout<<x<<endl;
+}
+
+int fun1(int a ,int b)
+{
+return a+b;
+}
+
+int fun1( int a ,char c)
+{
+cout<<a<<" "<< c <<endl;
+return a;
+}
+
+Result :
+
+10 A
+10 A
+13
+----------------------------------------------------------------------
+
+int fun1(int a, int b);
+int fun1(int );
+
+void main()
+{
+int x;
+fun1(10);
+x = fun1 (fun1(10 ),3);
+cout<<x<<endl;
+}
+
+int fun1(int a ,int b)
+{
+return a+b;
+}
+
+int fun1( int a)
+{
+cout<<a<<endl;
+return a;
+}
+
+Result :
+
+10
+10
+13
+----------------------------------------------------------------------
+
+int fun1(int a, int b);
+int fun1();
+
+void main()
+{
+int x;
+fun1();
+x = fun1 (fun1( ),3);
+cout<<x<<endl;
+}
+
+int fun1(int a ,int b)
+{
+return a+b;
+}
+
+int fun1( )
+{
+cout<<"hello"<<endl;
+return 3;
+}
+
+Result :
+
+hello
+hello
+6
+----------------------------------------------------------------------
+
+int fun1(int a, int b);
+int fun2();
+
+void main()
+{
+int x;
+cout<<fun2 ();
+x = fun1 (fun2(),3);
+cout<<x<<endl;
+}
+
+int fun1(int a ,int b)
+{
+return a+b;
+}
+
+int fun2()
+{
+cout<<"hello"<<endl;
+return 3;
+}
+
+Result :
+
+hello
+3hello
+6
+----------------------------------------------------------------------
+
+int fun1(int a, int b);
+int fun2();
+
+void main()
+{
+int x;
+fun2 ();
+x = fun1 (fun2(),3);
+cout<<x<<endl;
+}
+
+int fun1(int a ,int b)
+{
+return a+b;
+}
+
+int fun2()
+{
+cout<<"hello"<<endl;
+return 3;
+}
+
+Result :
+
+hello
+hello
+6
+----------------------------------------------------------------------
+
+int fun2(int b ,int a)
+{
+cout<<"B";
+return a-b;
+}
+
+int fun1(int a ,int b)
+{
+cout<<"A";
+return fun2(a,b);
+}
+
+void main()
+{
+int a=14;
+int b=10;
+cout<<"Hi \n";
+return 0;
+cout<<fun1(b,a)<<endl;
+}
+
+Result :
+
+Hi
+----------------------------------------------------------------------
+
+int max (int a ,int b)
+{
+if (a>=b)
+return a;
+return b;
+}
+
+void main()
+{
+int a=14;
+int b=127;
+cout<<"the max number is"<<max(b,a);
+}
+
+Result :
+
+the max number is 127
+----------------------------------------------------------------------
+
+int fun2(int b ,int a)
+{
+cout<<"B";
+return a-b;
+}
+
+int fun1(int a ,int b)
+{
+cout<<"A";
+return fun2(a,b);
+}
+
+void main()
+{
+int a=14;
+int b=10;
+cout<<fun1(b,a)<<endl;
+}
+
+Result :
+
+AB4
+----------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int fun2(int b ,int a);
+
+int fun1(int a ,int b)
+{
+cout<<"A";
+return fun2(a,b);
+}
+
+int fun2(int b ,int a)
+{
+cout<<"B";
+return a-b;
+}
+
+void main()
+{
+int a=14;
+int b=10;
+cout<<fun1(b,a)<<endl;
+}
+
+Result :
+
+AB4

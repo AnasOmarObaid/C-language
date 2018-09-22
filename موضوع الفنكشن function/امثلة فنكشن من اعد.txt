@@ -1,0 +1,528 @@
+// factorial calculator - function
+#include <iostream>
+using namespace std;
+int factorial (int a)
+{
+	  if (a > 1)
+	   return (a * factorial (a-1));
+	  else
+	   return 1;
+}
+
+int main ()
+{
+  int number;
+  cout << "Please enter a number: ";
+  cin >> number;
+  cout << number << "! = " << factorial (number) << endl;
+  cout<< "\nDesgin: Rafea Fheely\n";
+  return 0;
+}
+
+--------------------------------------------------------------------
+// passing parameters by reference - function
+#include <iostream>
+using namespace std;
+void duplicate (int &a, int &b, int &c)
+{
+  a*=2;
+  b*=2;
+  c*=2;
+}
+
+int main ()
+{
+  int x=1, y=3, z=7;
+  cout<<"passing parameters by reference :\n";
+  duplicate (x, y, z);
+  cout << "x=" << x << "\ny=" << y << "\nz=" << z << endl;
+  cout<< "\nDesgin: Rafea Fheely\n";
+  return 0;
+}
+
+--------------------------------------------------------------------
+// more than one returning value by reference - function
+#include <iostream>
+using namespace std;
+void prevnext (int x, int& prev, int& next)
+{
+  prev = x-1;
+  next = x+1;
+}
+
+int main ()
+{
+  int num=100, y, z;
+  cout<< " NOTE: more than one returning value by reference\n\n";
+  cout<< "Enter Number : ";
+  cin>> num;
+
+  prevnext (num, y, z);
+  cout << "  * Previous - = " << y << "\n  * Next + = " << z << endl;
+  cout<< "\nDesgin: Rafea Fheely\n";
+  return 0;
+}
+
+--------------------------------------------------------------------
+// default values in - function
+#include <iostream>
+using namespace std;
+int divide (int a, int b=2)
+{
+  int r;
+  r=a/b;
+  return r;
+}
+
+int main ()
+{
+	cout<< "default values in functions in divide " << endl;
+	cout << "Divide 12 = " << divide (12) << endl;
+	cout << "Divide 20.4 = " << divide (20.4) << endl;
+	cout<< "\nDesgin: Rafea Fheely\n";
+	return 0;
+}
+
+--------------------------------------------------------------------
+// overloaded function
+#include <iostream>
+using namespace std;
+int operate (int a, int b)
+{
+  return (a*b);
+}
+
+float operate (float a, float b)
+{
+  return (a/b);
+}
+
+int main ()
+{
+  int x=5,y=2;
+  float n=5.0,m=2.0;
+  // float n=2,m=3;
+  cout<< "overloaded function name\n" << endl;
+  cout << "operate (x,y) = " << operate (x,y) << endl;
+  cout << "operate (n,m) = " << operate (n,m) << endl;
+  cout<< "\nDesgin: Rafea Fheely\n";
+  return 0;
+}
+
+--------------------------------------------------------------------
+// declaring functions prototypes
+#include <iostream>
+using namespace std;
+void odd (int a);
+void even (int a);
+int main (int i)
+{
+  
+  do 
+  {
+    cout << "Type a number (0 to exit): ";
+    cin >> i;
+    odd (i);
+  } 
+  while (i!=0);
+  cout<< "\nDesgin: Rafea Fheely\n";
+  return 0;
+}
+
+void odd (int a)
+{
+  if ((a%2)!=0)
+	  cout << "Number is Odd.\n";
+  else
+	  even(a);
+}
+
+void even (int a)
+{
+  if ((a%2)==0) 
+	  cout << "Number is even.\n";
+  else 
+	  odd (a);
+}
+
+--------------------------------------------------------------------
+// function example
+#include <iostream>
+using namespace std;
+
+int subtraction (int a, int b)
+{
+  int r;
+  r=a-b;
+  return (r);
+}
+
+int main ()
+{
+	 int x=5, y=3, z;
+	 z = subtraction (7,2);
+	 cout << "The first result is " << z << '\n';
+	 cout << "The second result is " << subtraction (7,2) << '\n';
+	 cout << "The third result is " << subtraction (x,y) << '\n';
+	 z= 4 + subtraction (x,y);
+	 cout << "The fourth result is " << z << '\n';
+	 cout << "\nDesgin: Rafea Fheely\n";  
+	 return 0;
+}
+
+--------------------------------------------------------------------
+// custom countdown using while - function
+#include <iostream>
+using namespace std;
+void countdown (int n)
+{
+
+  while (n>0) 
+  {
+    cout << " " << n << "\n";
+    --n;
+  }
+  cout << "FIRE!\n";
+  cout<< "\nDesgin: Rafea Fheely\n";
+  return ;
+}
+
+void main()
+{
+	int n;
+	cout << "Enter the starting number : ";
+	cin >> n;
+	countdown(n);
+}
+
+--------------------------------------------------------------------
+// number echoer using function
+#include <iostream>
+using namespace std;
+void echoer ()
+{
+	  char n;
+		
+	  do 
+	  {
+	    cout << "Enter number ('y' to end): ";
+		cin >> n;
+		cout << "You entered: " << n << "\n\n";
+	  } 
+	  while (n != 'y');
+	  return ;
+}
+
+void main()
+{
+	echoer();
+	cout<< "\nDesgin: Rafea Fheely\n";
+}
+
+--------------------------------------------------------------------
+// countdown using function a for loop
+#include <iostream>
+using namespace std;
+void For_loop ()
+{
+  for (int n=10; n>0; n--) 
+  {
+    cout << " " << n << "\n ";
+  }
+  cout << "FIRE!\n";
+  cout<< "\nDesgin: Rafea Fheely\n";
+  return ;
+}
+
+void main()
+{
+	For_loop ();
+}
+
+--------------------------------------------------------------------
+// break loop example - function
+#include <iostream>
+using namespace std;
+void aborted ()
+{
+  int n;
+  for (n=10; n>0; n--)
+  {
+    cout << " " << n << "\n";
+    if (n==3)
+    {
+	  cout << "\n3 : break aborted!";
+      break;
+    }
+  }
+}
+
+void main()
+{
+	aborted();
+	cout<< "\n\nDesgin: Rafea Fheely\n";
+}
+
+--------------------------------------------------------------------
+// Sum Numbers - function
+#include <iostream>
+using namespace std ;
+void Sum()
+{
+
+	int sum=0;
+
+	for (int n=1;n<=10;n+=2)
+	{
+		cout<<n<<endl;
+		sum+=n;
+		//sum=sum+n;
+	}
+	cout<<endl<<"Sum is:"<<sum<<"\n\n";
+
+}
+void main ()
+{
+	Sum();
+	cout<< "\n\nDesgin: Rafea Fheely\n";
+
+}
+
+--------------------------------------------------------------------
+//break in x=5 - function
+#include <iostream>
+using namespace std ;
+void Rafea()
+{
+
+	int x;
+
+	for (x=1;x<=10;x++)
+	{
+		if (x==5)
+			continue; //break in x=5 ;
+		cout << " " << x << " ";
+	}
+	cout << "\nUsed continue to skip printing the value 5" << endl;
+ 
+}
+void main()
+{
+	Rafea();
+	cout << "\n\nDesgin: Rafea Fheely\n";
+}
+
+--------------------------------------------------------------------
+//print ***** ãËáË - function
+#include <iostream>
+using namespace std ;
+void Rafea()
+{
+
+
+	int i,j;
+	
+	for (i=1;i<=5;i++)
+	{
+		for(j=1;j<=i;j++)// if write (j=1;j<=5;j++)  =====>> *****
+		//{
+			cout<<"*";
+			cout<<endl;
+		//}
+	}
+	
+			
+}
+void main()
+{
+	Rafea();
+	cout << "\n\nDesgin: Rafea Fheely\n";
+}
+
+--------------------------------------------------------------------
+//this programm (x)^ y ==>>> (5)^ 2=25 - function
+#include <iostream>
+using namespace std ;
+void Rafea()
+{
+
+	int x,y,i,power;
+	power=1;
+	i=1;
+	cout << "Enter base as an integer:";
+	cin >> x;
+	cout << "Enter exponent as an integer:";
+	cin >> y;
+	while (i<=y)
+	{
+		power*= x;
+		++i;
+	}
+	cout << power << endl;
+
+}
+void main()
+{
+	Rafea();
+	cout << "\n\nDesgin: Rafea Fheely\n";
+}
+
+--------------------------------------------------------------------
+//this programm print Avareg by Student - function
+#include <iostream>
+using namespace std ;
+void Rafea()
+{
+
+
+	int total,gradeCounter,grade,avareg;
+	total= 0;
+	gradeCounter= 1;
+	
+	while (gradeCounter<=5)
+	{
+		cout << "Enter grade ";
+		cin >> grade;
+		total= total + grade;
+		gradeCounter+= 1;
+	}
+	avareg= total / 5;
+	cout << "Class avarege is" << avareg << endl;
+
+}
+void main()
+{
+	Rafea();
+	cout << "\n\nDesgin: Rafea Fheely\n";
+}
+
+--------------------------------------------------------------------
+//count % 2 ? "****" : "++++++++" - function
+#include <iostream>
+using namespace std ;
+void Rafea()
+{
+
+	int count=1;
+
+	while (count<=10)
+	{
+		cout << (count % 2 ? "****" : "++++++++") << endl;
+		++count;
+	}
+	
+			
+}
+void main()
+{
+	Rafea();
+	cout << "\n\nDesgin: Rafea Fheely\n";
+}
+
+--------------------------------------------------------------------
+//sum & avarge - function
+#include <iostream>
+using namespace std ;
+void Rafea()
+{
+
+	int limit,number,sum,counter;
+	cout << "Line 1: Enter number of data for processing" << endl;
+	cin >> limit;
+	sum= 0;
+	counter= 0;
+
+	while (counter < limit)
+	{
+		cout << "The number is:";
+		cin >> number;
+		sum+= number;
+		counter++;
+	}
+	cout << "Line 9: The sum of the = " << limit << "numbers = " << sum << endl;
+		
+		if (counter!=0)
+			cout << "Line 11: The avarge = " << sum /counter << endl;
+		else
+			cout << "Line 13: No input. " << endl;
+
+}
+void main()
+{
+	Rafea();
+	cout << "\n\nDesgin: Rafea Fheely\n";
+}
+
+--------------------------------------------------------------------
+//!done - function
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std ;
+void Rafea()
+{
+
+	int num,guess;
+	bool done;
+	num= (rand()+time(0))%100;
+	done= false;
+
+	while (!done)
+	{
+		cout << "Enter an integer greater " << "than or equal to 0 and "<< "less than 100: ";
+		cin >> guess;
+		cout << endl;
+			
+		if (guess==num)
+		{
+			cout << "you guessed the correct " << "number " << endl;
+			done= true;
+		}
+		else
+			if (guess < num)
+				cout << "you guess is lower " << "than the number.\n" << "Guess again! "<< endl;
+			else
+				cout << "you guess is higher " << "than the number.\n" << "Guess again! " << endl;
+	}		
+}
+void main()
+{
+	Rafea();
+	cout << "\n\nDesgin: Rafea Fheely\n";
+}
+
+--------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+void Num(int &x , int &y , int z ) // calling by Raferance
+{
+	x++;
+	y++;
+	z++;
+	cout << x << "  " << y << "  " << z << endl ;
+
+}
+/*void Num1(int a , int b , int c ) // calling by Raferance
+{
+	int x,y,z;
+	a++;
+	b++;
+	c++;
+	cout << a << "  " << b << "  " << c << endl ;
+	Num(x,y,z); // you must dentifier x,y,z
+	cout << "||||||||||||";
+
+}*/
+int main()
+{
+	int x=2,y=3,z=4;
+	Num(x,y,z);
+	cout<< "x+5 = " << x+5 << endl; // calling by Raferance
+	cout<< "y+5 = " << y+5 << endl;   // calling by Raferance
+	cout<< "z+5 = " << z+5 << endl; // calling by Raferance
+	cout << "\n\nDesgin: Rafea Fheely\n";
+	int a=2,b=3,c=4;
+	//Num1(a,b,c);
+}
+
+

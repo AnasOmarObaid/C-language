@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+//We use Programe is Function main in LAB 7
+//Desgin: Rafea Fheely - Al Ramtha
+int Rafea(int x, int y) //main number One 1 = Rafea
+{
+cout<<"\n______________________\n";
+return (x*y)+2;
+}
+int JUST (int e, int w) //main number Two 2 = JUST
+{
+return e+w;
+}
+int main() //main Code
+{
+int a,b;
+// cout Output
+cout<<"Welcome to be System Rafea Fheely\n";
+cout<<"Rafea , Enter the number 1 : ";
+cin>>a;
+cout<<"Rafea , Enter the number 2 : ";
+cin>>b;
+
+// cout Output
+cout<<"The Result is : "<<Rafea (a,b)<<"\n"<<"because ("<<a<<" * "<<b<<") + 2 = "<<a*b+2;
+cout<<"\n______________________\n\n\n";
+
+// we you not use (e,w) because not dentifier --->> we use (a,b)
+int x,y;
+cout<<"JUST , Enter the number 1 : ";
+cin>>x;
+cout<<"JUST , Enter the number 2 : ";
+cin>>y;
+cout<<"______________________\nThe Result is : "<<JUST (a,b)<<"\n"<<"because ("<<a<<" + "<<b<<") = "<<a+b<<"\n______________________\n\n";
+
+cout<<"\nWe use Programe is Function main in LAB 7\nDesgin PrOgRaM: Rafea Fheely - Al Ramtha\n\n";
+
+
+return 0;
+}

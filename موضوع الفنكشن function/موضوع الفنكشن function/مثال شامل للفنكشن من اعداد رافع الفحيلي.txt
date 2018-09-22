@@ -1,0 +1,99 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int w=10;
+void fun1(int a=2, int b=3)
+{
+	//a=0,b=0; // if write a=0,b=0; ====>> print 1  -2
+	a=a+1;
+	b=b-2;
+	cout<<"\nOutput fun1 ------------\n\n";
+	cout<<"AAAA\n";
+	cout<<a<<" "<<b;
+		//<<"\n.....................................\n\n";
+	return; // return means ... break statment
+	cout<<"Helo"; // not print statment because have (return;)
+}
+
+void fun2 (int x, int y)
+{
+	//x=2,y=3;
+	x++;
+	y++;
+	cout<<"\nOutput fun2 ------------\n\n";
+	cout<<x<<" "<<y<<endl;
+	//cout<<"\n.....................................\n\n";
+}
+
+void fun3() // the fun3 string name
+{
+	string name;
+	cout<<"Enter Your Name: ";
+	cin>>name;
+	cout<<"Welcome ("<<name<<") by Function main in website Rafea edu C++\n";
+	cout<<"_______________________________________________\n\n";
+
+	//return;
+}
+
+void fun4() // the fun4 in switch statment
+{
+	char a;
+	cout<<"Please Enter The Letter is a to k .. small letter\n";
+	cout<<"Enter Letter is a to k : "; cin>>a;
+		
+		switch (a)
+		{
+		case'a': cout<<"\nThe Letter is a\n\n";break;
+		case'b': cout<<"\nThe Letter is b\n\n";break;
+		case'c': cout<<"\nThe Letter is c\n\n";break;
+		case'd': cout<<"\nThe Letter is d\n\n";break;
+		case'e': cout<<"\nThe Letter is e\n\n";break;
+		case'f': cout<<"\nThe Letter is f\n\n";break;
+		case'g': cout<<"\nThe Letter is g\n\n";break;
+		case'h': cout<<"\nThe Letter is h\n\n";break;
+		case'i': cout<<"\nThe Letter is i\n\n";break;
+		case'j': cout<<"\nThe Letter is j\n\n";break;
+		case'k': cout<<"\nThe Letter is k\n\n";break;
+		default:
+			cout<<"\nNot Choose Letter is defiend... Good Luck\n\n";
+		}
+}
+
+void main()
+{
+
+	int z,x=22,q=33;
+ 	int a=2,b=4;
+	z=x+q;
+
+	cout<<"Welcome by System Rafea Fheely - Rafea C++\n\n";
+	cout<<"________________( New Programe 1 ... Rafea Fheely )__________________\n\n";
+
+    fun1();
+	fun2(1,1); //if write cout<<fun2(1,1); ===>> error
+	//fun1(2,2);
+	//fun2(x,q);
+	//fun2(1,1);
+	cout<<"\nOutput main q,z --------\n\n";
+	cout<<x<<" "<<q<<endl<<"Z = "<<z<<endl;
+	//cout<<"\n.....................................\n\n";
+
+	cout<<"\nW = "<<w<<endl;
+
+	// New Programe string name...
+	cout<<"\n\n________________( New Programe 2 - string ... Rafea Fheely )__________________\n\n";
+	fun3();
+	cout<<"\n";
+
+	cout<<"\n________________( New Programe 3 - switch ... Rafea Fheely )__________________\n\n";
+	fun4();
+	cout<<"\n\n";
+
+	cout<<"Thank you for use programe Functions main"
+		<<"\nDesgin Programe: Rafea Fheely\n"
+		<<"Visit my Site:https://sites.google.com/site/rafeaedu/home\n"
+		<<"Good Luck ... ";
+
+}
+

@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+int Max(int x , int y)
+{
+
+	if (x>y)
+		return x;
+	else
+		return y;
+		
+}
+int main()
+{
+	int x,y;
+	cout<<"Enter two Number :";
+	cin>>x>>y;
+	cout<<"\nThe Max num : "<<Max(x,y)<<endl;
+	
+}
+
+-----------------------------------------------------------
+use over loading
+-----------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int Max(int x , int y)
+{
+	if (x>y)
+		return x;
+	else
+		return y;
+}
+int Max( int x , int y, int z)
+{
+	if (x>y)
+		return x;
+	else if (x>z)
+		return z;
+	else
+		return y;
+}
+int main()
+{
+	int x=10,y=20,z=30;
+	//cout<<"Enter Two Num : ";
+	//cin>>x,y,z;
+
+	cout<<"Max(10,20) = "<<Max(x,y);
+	cout<<"\nMax(10,20,30) = "<<Max(x,y,z)<<"\n\n";
+}

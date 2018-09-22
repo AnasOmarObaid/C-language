@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+void Rafea()
+{
+	char ch;
+	int i,j,t,k;
+	int x,z,c,m,w,h,r,e;
+	cout<<"Enter SHEEB"<<endl;
+	cin>>ch;
+	cout<<"Enter 'numbr'"<<endl;
+	cin>>w;
+
+	for(i=1;i<=w;i++)
+	{
+		for(j=1;j<=w-i;j++)
+		cout<<" ";
+		for(e=i;e<=i;e++)
+		cout<<ch;
+		for(r=1;r<=2*i-3;r++)
+		cout<<" ";
+		if(i>=2)
+		for(x=i;x<=i;x++)
+		cout<<ch;
+		cout<<endl;
+		}
+		for(z=w-1;z>=1;z--)
+		{
+		for(m=1;m<=w-z;m++)
+		cout<<" ";
+		for(h=z;h<=z;h++)
+		cout<<ch;
+		for(c=2*z-3;c>=1;c--)
+		cout<<" ";
+		for(t=z;t<=z ;t ++)
+		if(z>=2)
+		cout<<ch;
+		cout<<endl;
+		}
+			
+}
+void main()
+{
+	cout<<"Welcome by site Rafea edu - Desgin: Rafea Fheely\n";
+	cout<<"Site:https://sites.google.com/site/rafeaedu/home";
+	cout<<"\n______________________________________________\n\n";
+	Rafea();
+}

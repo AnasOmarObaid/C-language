@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+bool Primer(int n)
+{
+	int pimN = n - 1;
+	bool remainder = false;
+
+		if(n == 2)
+		return true;
+
+		while(pimN > 1)
+		{
+			if(n % pimN > 0)
+			remainder = true;
+			else
+			return false;
+
+			pimN--;
+		}
+
+	return remainder;
+}
+int main()
+{
+	int n,primeNumber;
+
+	cout << "Please insert 10 integers:" << endl;
+
+	for(int b=1;b<=10;b++)
+	{
+		cin >> n;
+		if (Primer(n))
+		primeNumber=n;
+
+	}
+
+	cout<<"The number of prime integers is "<<primeNumber<<"."<<endl;
+
+	return 0;
+}

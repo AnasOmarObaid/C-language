@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+void fun1(){
+
+	cout<<"      $    \n";
+	cout<<"     $ $   \n";
+	cout<<"    $   $   \n";
+	cout<<"   $     $   \n";
+	cout<<"  $       $   \n";
+}
+void fun2(){
+
+	cout<<" -----------\n";
+	cout<<" |  _   _  |\n";
+	cout<<" | | | | | |\n";
+	cout<<" | --- --- |\n";
+	cout<<" |         |\n";
+	cout<<" |   ___   |\n";
+	cout<<" |   | |   |\n";
+	cout<<" |   | |   |\n";
+}
+void fun3(){
+
+	cout<<" -----------\n";
+}
+void main()
+{
+	fun1();
+	fun2();
+	fun3();
+}

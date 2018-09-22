@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+void Rafea1()
+{
+
+	cout<<"Rafea Fheely\n";
+	cout<<"Welcome by site Rafea edu C++\n";
+	return; // stopped in return;
+}
+void Rafea2(int w=2, int s=3)
+{
+	cout<<"Enter Two Number ";
+	//cin>>w>>s;
+	w++;
+	s--;
+
+	cout<<w<<" "<<s<<endl;
+	return;
+}
+void main()
+{
+	int w=2,s=3;
+
+	int x,y;
+	x=2;
+	y=3;
+	int z=x+y;
+	cout<<"The Sum is "<<z<<endl;
+	
+	int q=6;
+	Rafea1(); // if write cout<<Rafea1(); ====>> error
+	cout<<"The Value q is :"<<q<<endl;
+
+	cout<<endl;
+	Rafea2(w,s);
+
+	cout<<"\nGood by\n";
+	cout<<"Desgin: Rafea Fheely\n";
+	cout<<"Visit my Site: https://sites.google.com/site/rafeaedu/home\n";
+
+}

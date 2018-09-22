@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+void Rafea()
+{ 
+	int option,choois; 
+	float salary,n,h,w; 
+	cin>>option;
+	
+	while(option!=4) 
+	{ 
+		cout<<"please your choois :\n1-For calculating the salaries of staff weekly.\n2-For calculating the salaries of staff piecework.\n3-For calculating the salaries of other type of staff.\n4-Out of the program:-\n"; 
+		cin>>choois; 
+		cout<<"plz choois 1 to 4 \n";
+		switch(choois) 
+		{ 
+		case 1: 
+			cout<<"Enter salaries :- ";
+			cin>>salary; 
+			cout<<"salaries = "<<salary<<endl; break; 
+		case 2: 
+			cout<<"How Bit Rate :- "; 
+			cin>>n; 
+			cout<<(n/100)*5.7<<endl; break; 
+		case 3: 
+			cout<<"How many hours you are working :- "; 
+			cin>>h; 
+			if(h<=10) 
+				w=(h*20)+250; 
+			else 
+				w=(h*40)+250; 
+				cout<<w<<endl; 
+				break; 
+		case 4: 
+			cout<<"exit\n"; break; 
+		default : 
+			cout<<" wrong\n"; 
+		} 
+		cin>>option; 
+	}
+}
+void main()
+{
+	Rafea();
+
+	cout<<"\n\nWelcome by site Rafea edu - Desgin: Rafea Fheely\n";
+	cout<<"Site:https://sites.google.com/site/rafeaedu/home\n\n";
+}

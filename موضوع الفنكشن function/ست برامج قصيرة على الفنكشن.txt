@@ -1,0 +1,183 @@
+
+Functions Example :
+
+#include <iostream>
+
+int fun1 (int z)
+{
+return z+3;
+return 10;
+return 15;
+}
+
+void main()
+{
+int i=0;
+i=fun1 (5);
+cout<< i<<endl;
+}
+
+Result :
+
+8
+
+-----------------------------------------------------
+
+Functions Example :
+
+#include <iostream>
+
+int fun1 (int z)
+{
+return z+3;
+}
+
+void main()
+{
+int i=0;
+i=fun1 (5);
+cout<< i<<endl;
+}
+
+Result :
+
+8
+
+---------------------------------------------------
+
+Functions Example :
+
+#include <iostream>
+
+int fun1 (int z)
+{
+return z+3,20,30;
+return 10;
+return 15;
+}
+
+void main()
+{
+int i=0;
+i=fun1 (5);
+cout<< i<<endl;
+}
+
+Result :
+
+30
+-------------------------------------------------
+
+Functions Example :
+
+#include <iostream>
+
+int fun1 (int z)
+{
+z= z+3;
+cout<<"Hello \n";
+return z;
+z=z++;
+cout<<"Hi \n";
+}
+
+void main()
+{
+int i=0;
+i=fun1 (5);
+cout<< i<<endl;
+}
+
+Result :
+
+Hello
+8
+
+--------------------------------------------------
+
+Functions Example :
+
+#include <iostream>
+
+int fun1 (int z)
+{
+z= z+3;
+return 'a';
+}
+
+void main()
+{
+int i=0;
+i=fun1 (5);
+cout<< i<<endl;
+}
+
+Result :
+
+97
+-----------------------------------------------
+#include<iostream>
+using namespace std;
+
+int fun1 (int z)
+{
+z= z+3;
+return z;
+}
+
+void main()
+{
+int i=0;
+i=fun1 (5);
+cout<< i<<endl;
+}
+
+Result :
+
+8
+
+--------------------------------------------------------------
+
+# include <iostream>
+# include <string>
+using namespace std;
+
+int sum(int a,int b)
+{
+cout<<"Please Enter the value of x again: ";
+cin>>a;
+cout<<"Please Enter the value of y again: ";
+cin>>b;
+return a+b;
+}
+int summation(int &a,int &b)
+{
+cout<<"Please Enter the value of z again: ";
+cin>>a;
+cout<<"Please Enter the value of k again: ";
+cin>>b;
+return a+b;
+}
+
+int main()
+{
+
+int x;
+int y;
+cout<<"Please Enter the value of x: ";
+cin>>x;
+cout<<"Please Enter the value of y: ";
+cin>>y;
+cout<<"The sum of two integer numbers by value: "<<sum(x,y)<<" x= "<<x<<" y= "<<y<<"\n";
+
+int z;
+int k;
+cout<<"\nPlease Enter the value of z: ";
+cin>>z;
+cout<<"Please Enter the value of k: ";
+cin>>k;
+
+cout<<"The sum of two integer numbers by reference: "<<summation(z,k)<<" z= "<<z<<" k= "<<k<< "\n";
+
+return 0;
+}

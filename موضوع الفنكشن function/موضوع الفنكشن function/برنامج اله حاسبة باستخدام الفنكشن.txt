@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+float sum ( float x , float y)
+{ 
+	float s=x+y; 
+	return s;
+} 
+float subtract ( float x , float y)
+{ 
+	float s=x-y; 
+	return s;
+} 
+float multiple ( float x , float y)
+{ 
+	float m=x*y; 
+	return m;
+} 
+float divide (int x ,int y)
+{ 
+	float d=x/y; 
+	return d;
+} 
+void main() 
+{ 
+	float x,y; 
+	int option; 
+	cout<<"enter 2 numbers:\n"<<endl; 
+	cin>>x>>y; 
+	cout<<"select opration:\n"<<
+		"1 for summation +\n"<<
+		"2 for substraction -\n"<<
+		"3 for multiplcation *\n"<<
+		"4 for division /\n"<<endl; 
+	cin>>option; 
+	
+	switch(option)
+	{ 
+	case 1:cout<<x<<" + "<<y<<" = "<<sum(x,y)<<"\n"; break; 
+	case 2:cout<<x<<" - "<<y<<" = "<<subtract(x,y)<<"\n"; break;
+	case 3:cout<<x<<" * "<<y<<" = "<<multiple(x,y)<<"\n"; break; 
+	case 4:cout<<x<<" / "<<y<<" = "<<divide(x,y)<<"\n"; break;
+	default : cout<<"error"<<endl;
+	} 
+
+	cout<<"\n\nWelcome by site Rafea edu - Desgin: Rafea Fheely\n";
+	cout<<"Site:https://sites.google.com/site/rafeaedu/home\n\n";
+}

@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+void Rafea()
+{
+	int x,y,z;
+	cout<<"Program: Table mul * \n\n";
+	for(x=1;x<9;x++)
+	{
+		for(y=1;y<5;y++)
+		{
+			z=x*y;
+			cout<<x<<" * "<<y<<" = "<<z<<endl;
+		}
+	}
+	
+}
+void main()
+{
+	Rafea();
+
+	cout<<"\n\nWelcome by site Rafea edu - Desgin: Rafea Fheely\n";
+	cout<<"Site:https://sites.google.com/site/rafeaedu/home\n\n";
+}

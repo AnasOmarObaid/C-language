@@ -1,0 +1,227 @@
+/*
+
+#include<iostream>
+using namespace std;
+//Desgin: Rafea Fheely - Al Ramtha
+//website : https://sites.google.com/site/rafeaedu/home
+int number (int a)
+{
+int count=0;
+	for(int i=1;i<=a;i++)
+		if (a%i==0)
+		count++;
+		if (count==2) 
+		return true;
+
+}
+void main()
+{
+int num;
+cout<<"plz enter a positive number: ";
+cin>>num;
+cout<<"The Number is: "<<number(num)<<"\n\n\nDesgin: Rafea Fheely\nGood by Emran AL-shoqran\n\nVisit my Site: https://sites.google.com/site/rafeaedu/home\n";
+}
+---------------------------------------------
+#include<iostream>
+using namespace std;
+int number (int a)
+{
+int count=0;
+
+if (a>0)
+{
+for(int i=1;i<=a;i++)
+if (a%i==0)count++;
+
+if(count==2) return true;
+else return false;
+}
+else {
+cout<<"plz try to enter a p_number again:";
+cin>>a;
+for(int i=1;i<=a;i++)
+if (a%i==0)count++;
+
+if(count==2) return true;
+else return false;
+}
+
+}
+
+void main()
+{
+int num;
+cout<<"plz enter a positive number: ";
+cin>>num;
+
+cout<<number(num)<<"\n";
+
+}
+
+
+
+---------------------------------------------
+#include<iostream>
+using namespace std;
+int decider(int);
+void main()
+{
+int num;
+cout<<"Please enter the number you want to decide: ";
+cin>>num;
+if(num%2==0)
+{
+cout<<decider(num)<<" ";
+cout<<"Even"<<endl;
+}
+else
+{
+cout<<decider(num)<<" ";
+cout<<"Odd"<<endl;
+}
+}
+int decider(int value)
+{
+if(value%2==0)
+return 0;
+else return 1;
+}
+---------------------------------------------
+#include<iostream>
+using namespace std;
+
+int fun1 (int a,int b)
+{
+a++;
+b++;
+return a*b;
+}
+
+void main()
+{
+int x=3;
+int y=6;
+cout<< fun1(2,3)<<endl;
+cout<<fun1(x,y)<<endl;
+}
+--------------------------------------------
+#include<iostream>
+using namespace std;
+
+int fun1 (char a)
+{
+a++;
+return a;
+}
+
+void main()
+{
+char x='c';
+cout<< fun1(x)<<endl;
+}
+-------------------------------------------
+#include<iostream>
+using namespace std;
+int fun1 (int a,int b)
+{
+a++;
+b++;
+return a*b;
+}
+void main()
+{
+int x=3;
+int y=6;
+cout<< fun1(2,3)<<endl;
+cout<<fun1(x,y)<<endl;
+}
+
+Ãæ íãßä ÊÚÑíÝ Çáãíä Çæá ÇáÝäßÔä åßÐÇ
+#include<iostream>
+using namespace std;
+int fun1 (int,int);
+void main()
+{
+int x=3;
+int y=6;
+cout<< fun1(2,3)<<endl;
+cout<<fun1(x,y)<<endl;
+
+}
+int fun1 (int a,int b)
+{
+a++;
+b++;
+return a*b;}
+
+-------------------------------------------
+#include<iostream>
+using namespace std;
+
+char fun1 (char a)
+{
+a++; // a--
+return a;
+}
+
+void main()
+{
+char x='e';
+cout<< fun1(x)<<endl;
+}
+-------------------------------------------
+#include<iostream>
+using namespace std;
+int add (int x,int y)
+{
+
+return x+y;
+}
+
+void main()
+{
+int a,b,c;
+a=3;
+b=6;
+c=10;
+a = add(b,c) + add(b,c) ; // a = add (b , add (b,c) );
+cout<< a<<endl;
+
+}
+-------------------------------------------
+#include <iostream>
+using namespace std;
+#include <cmath>
+
+// Function prototypes
+float distance(float,float);
+
+void main()
+{
+float x,y,dist;
+
+// Test function distance(x,y)
+cout << "Testing function distance(x,y)"
+<< endl;
+cout << "Enter values for x and y: ";
+cin >> x >> y;
+dist = distance(x,y);
+cout << "Distance of (" << x << ',' << y
+<< ") from origin is " << dist
+<< endl
+<< "Tested"
+<< endl;
+
+} // End of main
+
+// Function Definitions
+
+float distance(float x, float y)
+// Returns the distance of (x, y) from origin
+{
+float dist; //local variable
+dist = sqrt(x * x + y * y);
+return dist;
+}
+
+*/

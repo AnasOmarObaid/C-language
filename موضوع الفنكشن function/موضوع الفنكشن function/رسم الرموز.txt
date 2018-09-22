@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+void main()
+{
+	char i=2,y=3;
+	int w;
+	
+		while (w!=0)
+		{
+			cin >> w;
+			if (w==1)
+				cout << "  " << char (y) << "    Rafea" << endl;
+			else if (w==2)
+				cout << "   " << char (y) << "    Rafea Ali" << endl;
+			else if (w==3)
+				cout << "    " << char (y) << "    Rafea Ali Abid" << endl;
+			else if (w==4)
+				cout << "     " << char (y) << "    Rafea Ali Abid Fheely" << endl;
+	
+	}
+
+}

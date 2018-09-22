@@ -1,0 +1,33 @@
+//main.cpp is prog. that give the distance between two points.
+//Produced by:Mohammad Othman.
+//ID:20120171014.
+//Date:3/12/2012.monday.8.30pm.
+#include<iostream>  //preprocessor.
+using namespace std;
+bool isVowel(char x)        //user defined function.             
+{
+	/*if-statements.*/
+	if (x=='a'||x=='e'||x=='i'||x=='o'||x=='u') 
+		return true;
+	else if (x=='A'||x=='E'||x=='I'||x=='O'||x=='U')
+		return true;
+	else 
+	return false;
+}
+void main ()
+{
+	/*declearing identifires*/
+	int counter=0;   
+	char choice;           //the user will  ini. this value.
+
+	/*ini. vars*/
+	cout<<"Please insert a sequence of characters: ";   //alter the user to insert a sequence of characters.
+	cin>>choice;       //ini.
+	while(choice!='0')  //while statement.
+	{
+		if(isVowel(choice))   //calling isVowel function.
+	counter++;
+	cin>>choice;
+	}
+	cout<<"Number of vowels is: "<<counter<<endl;   //output statement.
+}

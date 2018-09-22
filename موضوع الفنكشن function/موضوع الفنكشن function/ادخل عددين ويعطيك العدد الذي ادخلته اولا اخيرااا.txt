@@ -1,0 +1,19 @@
+
+#include <iostream>
+using namespace std ;
+int x , y , z ;
+void swap(int x , int y)
+{
+z=x ;
+x=y;
+y=z ;
+cout <<x<<"\n" << y ;
+}
+
+void main ()
+{
+cout << " Enter two numbers , x and y : \n" ;
+cin >> x >> y ;
+
+swap(x,y) ;
+}

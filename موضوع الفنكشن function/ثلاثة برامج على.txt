@@ -1,0 +1,122 @@
+Download this file from the site Rafea educational programming C + +
+Example ( fubction )
+made in: rafea fheely
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Example (Calculater & factorail )
+
+-----------------------------------------------------------------
+
+
+ÈÑäÇãÌ ÇáÍÇÓÈÉ Şñæã ÈÇáÚãá ÇñÊ ÇáÃÑÈÚ ÈÇÓÊÎÏÇã ÇáÏæÇá æ ÓñãÍ ÈÇáÇÓÊãÑÇÑ İ ÇáÇÓÊÎÏÇã ÈŞÏÑ ãÇ Ññ Ïñ ÇáãÓÊÎÏã
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+int sum(int x,int y) 
+{
+	int m=x+y;
+	return m;
+} 
+int sub(int x,int y) 
+{
+	int m=x-y; 
+	return m;
+} 
+int mul(int x,int y) 
+{
+	int m=x*y; 
+	return m;
+}
+int div(int x,int m,int y) 
+{
+	m=x/y; 
+	return m;
+} 
+
+
+int main() 
+{
+	string name;
+	int a,b; 
+	char c,d; 
+	for(;;) 
+	{
+		cout<<"Enter your name: "; cin>>name;
+		cout<<"\nenter a : "; cin>>a;
+		cout<<"enter the operation : "; cin>>c;
+		cout<<"enter b : "; cin>>b; 
+				
+		switch(c) 
+		{ 
+		case'+':cout<<"the result is "<<sum(a,b);break; 
+		case'-':cout<<"the result is "<<sub(a,b);break; 
+		case'*':cout<<"the result is "<<mul(a,b);break; 
+		//case'/':cout<<"the result is "<<div(a,b);break; 
+		default:cout<<"undefined Not operation";break;
+		} 
+		cout<<"\n\nDo you want to continue in System Rafea Fheely ? (yes/no)\n"; 
+		cin>>d; 
+		
+		if(d=='y') 
+		{
+			continue; 
+			cout<<"\n";
+		
+		} 
+		else 
+		{
+			cout<<"\ngood by "<<name<<"\nDesgin:Rafea Fheely\n\n";break;
+		}
+	}
+	return 0;
+}
+
+---------------------------------------------------------------------------
+
+ÈÑäÇãÌ íÌÑí ÚãáíÉ ÇáÌãÚ ÈÇÓÊÎÏÇã ÇáÏæÇá
+
+#include <iostream>
+using namespace std;
+int sum(int x, int y) 
+{
+	int m; 
+	m=x+y; 
+	return m;
+
+}
+int main() 
+{
+	int a,b;
+	cout<<"enter a : "; cin>>a; 
+	cout<<"enter b : "; cin>>b; 
+	cout<<"\nThe Sum "<<a<<" + "<<b<<" = "<<sum(a,b)<<"\n\nDesgin: Rafea Fheely\n\n\n";
+
+	return 0;
+}
+
+----------------------------------------------------------------------------
+ÈÑäÇãÌ Şñæã ÈÅÏÎÇá ÚÏÏ ãä ÇáäæÚ ÇáÕÍ Íñ Ëã Şñæã ÈÅ ÌñÇÏ ãÖÑæÈÉ Í Ëñ Ãä
+ãÖÑæÈ ÇáÚÏÏ 5 åæ 5*4*3*2*1 æ ÓñÇæí 120 ÈÇÓÊÎÏÇã ÇáÏæÇá
+
+#include <iostream>
+using namespace std;int fact(int x) 
+{
+	int i; 
+	int y=1; 
+	for(i=x;i>0;i--) 
+		y=y*i; 
+	return y;
+} 
+void main() 
+{
+	int a; cout<<"enter the number : "; cin>>a; 
+	cout<<"The Factorail is : "<<fact(a);
+	cout<<"\n\nDesgin: Rafea Fheely\n\n\n";
+
+}
+
+
+------------------------------------------------------------------------
