@@ -1,5 +1,9 @@
 // Engineer Anas Omar Obaid
+<<<<<<< HEAD
 // Engineer At AlAzher
+=======
+// Engineer //
+>>>>>>> 2e88afdf3f7f091fcee48448b0d15d93365998bc
 #include<stdio.h>     
 #include<stdlib.h>
 #include<conio.h>
